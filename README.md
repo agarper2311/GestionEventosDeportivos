@@ -6,7 +6,4 @@
 
 ### **Descripción del proyecto**
 
-
-### **Descripción del proyecto**
-
 Descripción del proyecto dada por Ángel
