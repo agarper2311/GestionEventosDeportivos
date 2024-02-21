@@ -1,5 +1,5 @@
 ## Gestión de eventos deportivos
 
-## Nombre:: Angel
-## Nombre:: David
+## Nombre:: Ángel García
+## Nombre:: David Sánchez
 
