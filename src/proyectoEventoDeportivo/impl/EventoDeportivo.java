@@ -1,6 +1,6 @@
-package impl;
+package proyectoEventoDeportivo.impl;
 
-import com.es.programacion.Tema6.proyectoGestionEventoDeportivo.api.Ganador;
+import proyectoEventoDeportivo.api.Ganador;
 
 import java.util.ArrayList;
 

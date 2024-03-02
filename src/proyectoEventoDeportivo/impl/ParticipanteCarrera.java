@@ -1,6 +1,4 @@
-package impl;
-
-import java.util.ArrayList;
+package proyectoEventoDeportivo.impl;
 
 public class ParticipanteCarrera extends Participante {
 
