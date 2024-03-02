@@ -1,4 +1,4 @@
-package impl;
+package proyectoEventoDeportivo.impl;
 
 public class Participante {
 
