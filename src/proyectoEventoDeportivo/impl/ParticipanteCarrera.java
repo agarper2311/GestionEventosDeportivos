@@ -31,9 +31,4 @@ public class ParticipanteCarrera extends Participante {
                 ", tiempo=" + tiempo +
                 '}';
     }
-
-
-
-
-
 }
