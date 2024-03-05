@@ -95,3 +95,4 @@ Atributos:
 
 ### Prueba de Funcionamiento
 ![Prueba De Funcionamiento](src/proyectoEventoDeportivo/img/Prueba de Funcionamiento.png)
+![img.png](img.png)
