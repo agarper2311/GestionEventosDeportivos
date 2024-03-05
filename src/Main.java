@@ -46,8 +46,10 @@ public class Main {
         // Mostrar la lista de equipos de mayor a menor puntuación
         Collections.sort(torneo1.equipos, Collections.reverseOrder());
         System.out.println("Equipos ordenados por puntuación:");
-        for (Equipo equipo : torneo1.equipos) {
+        for (int i = 0; i < torneo1.equipos.size(); i++) {
+            Equipo equipo = torneo1.equipos.get(i);
             System.out.println(equipo.getNombre() + " - Puntos: " + equipo.getPuntos());
         }
+
     }
 }
