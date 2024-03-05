@@ -92,3 +92,6 @@ Atributos:
 7. Equipo: Representa un equipo deportivo. Implementa la interfaz Comparable para permitir comparar equipos basándose en sus puntos acumulados. Contiene información sobre el nombre del equipo, una lista de jugadores y los puntos que ha acumulado.
 
 8. Main: Clase principal que demuestra cómo instanciar y manipular las clases anteriores para crear un sistema funcional de gestión de eventos deportivos. Incluye ejemplos de cómo añadir participantes y equipos a eventos, determinar y mostrar ganadores, y ordenar equipos por puntuación.
+
+### Prueba de Funcionamiento
+![Prueba De Funcionamiento](src/proyectoEventoDeportivo/img/Prueba de Funcionamiento.png)
