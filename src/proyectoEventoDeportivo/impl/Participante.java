@@ -1,20 +1,11 @@
 package proyectoEventoDeportivo.impl;
 
 public class Participante {
-
-    //Atributos de clase
     private String dni;
     private String nombre;
     private String apellidos;
     private int edad;
 
-    /**
-     * Constructor que recibe por parametros:
-     * @param dni
-     * @param nombre
-     * @param apellidos
-     * @param edad
-     */
     public Participante(String dni, String nombre, String apellidos, int edad) {
         this.dni = dni;
         this.nombre = nombre;
@@ -22,8 +13,7 @@ public class Participante {
         this.edad = edad;
     }
 
-    //Getters y Setters
-
+    // Getters y setters
     public String getDni() {
         return dni;
     }
@@ -56,8 +46,6 @@ public class Participante {
         this.edad = edad;
     }
 
-    //Metodo toString
-
     @Override
     public String toString() {
         return "Participante{" +
@@ -68,7 +56,6 @@ public class Participante {
                 '}';
     }
 
-    // Método equals
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

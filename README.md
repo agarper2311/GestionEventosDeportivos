@@ -44,7 +44,7 @@ Métodos:
   que no lo sean. Dos participantes son iguales cuando tienen el mismo
   dni.
 
-## - Clase PartocoànteCarrera:
+## - Clase ParticipanteCarrera:
 
 − tiempo: double (Investigar otros posibles formatos)
 Métodos:
@@ -75,18 +75,20 @@ Atributos:
   Que devuelva una lista con los ganadores del evento deportivo. Este
   método debe ser implementado en las subclases.
 
-## Resumen del funcionamiento general del proyecto:
+## Clases del Sistema de Gestión de Eventos Deportivos:
 
-1.Clase Participante: Esta clase representa a un participante en un evento deportivo y almacena su información personal como DNI, nombre, apellidos y edad. También incluye métodos para inicializar los atributos, obtener y establecer los valores de los atributos, convertir la información del participante en una cadena de texto y verificar si dos participantes son iguales basándose en su DNI.
+1. Participante: Representa a cualquier persona que participa en un evento deportivo. Contiene información básica como DNI, nombre, apellidos y edad.
 
-2.Clase ParticipanteCarrera: Esta clase hereda de la clase Participante y agrega un atributo adicional llamado tiempo, que representa el tiempo que el participante tomó en completar una carrera. Los métodos incluyen inicializar los atributos, obtener y establecer los valores del tiempo y convertir la información del participante en una cadena de texto.
+2. ParticipanteCarrera: Hereda de Participante y añade un atributo específico para carreras, el tiempo registrado en la competencia.
 
-3.Interfaz Ganador: Declara un método obtenerGanador() que debe ser implementado por las clases que la utilicen. Este método devuelve al ganador del evento.
+3. Ganador (Interfaz): Declara el método obtenerGanador(), que debe ser implementado por las clases que representen eventos deportivos para determinar el ganador del evento.
 
-4.Clase abstracta EventoDeportivo: Implementa la interfaz Ganador e incluye atributos comunes a todos los eventos deportivos como nombre, fecha, lugar y una lista de participantes. También contiene métodos para inicializar los atributos, agregar participantes al evento y un método abstracto para obtener al ganador del evento.
+4. EventoDeportivo (Clase Abstracta): Representa un evento deportivo general y define la estructura básica que deben tener todos los eventos deportivos, incluyendo nombre, fecha, lugar y una lista de participantes. Implementa la interfaz Ganador y declara el método abstracto obtenerGanador().
 
-5.Clases Carrera y TorneoDeFutbol: Estas clases heredan de EventoDeportivo y proporcionan implementaciones específicas para los eventos de carrera y torneo de fútbol. Cada una tiene sus propios atributos y métodos para manejar las características específicas de esos eventos, así como para determinar al ganador.
+5. Carrera: Específica para eventos de carreras. Hereda de EventoDeportivo e implementa el método obtenerGanador() para determinar el ganador de la carrera basándose en el menor tiempo registrado.
 
-6.Clase Equipo: Representa a un equipo en un torneo de fútbol, con atributos como nombre, lista de jugadores y puntos acumulados. Incluye métodos para agregar y eliminar jugadores, así como para convertir la información del equipo en una cadena de texto.
+6. TorneoDeFutbol: Específico para torneos de fútbol. Hereda de EventoDeportivo y añade una lista de equipos. Implementa el método obtenerGanador() para determinar el equipo ganador basándose en la mayor cantidad de puntos acumulados. También incluye un método para inscribir equipos en el torneo.
 
-7.Clase Main: La clase principal del proyecto que realiza las operaciones principales, como instanciar eventos deportivos, agregar participantes y equipos, mostrar información de eventos, participantes, equipos y jugadores, determinar y mostrar los ganadores de los eventos y mostrar la lista de equipos clasificados por puntos.
+7. Equipo: Representa un equipo deportivo. Implementa la interfaz Comparable para permitir comparar equipos basándose en sus puntos acumulados. Contiene información sobre el nombre del equipo, una lista de jugadores y los puntos que ha acumulado.
+
+8. Main: Clase principal que demuestra cómo instanciar y manipular las clases anteriores para crear un sistema funcional de gestión de eventos deportivos. Incluye ejemplos de cómo añadir participantes y equipos a eventos, determinar y mostrar ganadores, y ordenar equipos por puntuación.

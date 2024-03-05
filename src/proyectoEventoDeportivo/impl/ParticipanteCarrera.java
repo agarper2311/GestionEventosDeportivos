@@ -1,17 +1,14 @@
 package proyectoEventoDeportivo.impl;
 
 public class ParticipanteCarrera extends Participante {
-
-    //Atributos
     private double tiempo;
 
-    // Constructor
     public ParticipanteCarrera(String dni, String nombre, String apellidos, int edad, double tiempo) {
         super(dni, nombre, apellidos, edad);
         this.tiempo = tiempo;
     }
 
-    // Getter y setter para el tiempo
+    // Getters y setters
     public double getTiempo() {
         return tiempo;
     }
@@ -20,15 +17,8 @@ public class ParticipanteCarrera extends Participante {
         this.tiempo = tiempo;
     }
 
-    // Método toString
     @Override
     public String toString() {
-        return "ParticipanteCarrera{" +
-                "dni='" + getDni() + '\'' +
-                ", nombre='" + getNombre() + '\'' +
-                ", apellidos='" + getApellidos() + '\'' +
-                ", edad=" + getEdad() +
-                ", tiempo=" + tiempo +
-                '}';
+        return super.toString() + " Tiempo: " + tiempo + "s";
     }
 }
